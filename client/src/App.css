@@ -1,0 +1,202 @@
+/* Cloud IDE Theme */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Monaco', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Playground Container */
+
+.playground-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #86d7e2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Editor Container */
+
+.editor-container {
+  min-height: 60vh;
+  display: flex;
+  flex: 1;
+}
+
+/* Files Container */
+
+.files {
+  padding: 20px;
+  width: 10vw;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+}
+
+.files ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.files li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.files li:last-child {
+  border-bottom: none;
+}
+
+.files li:hover {
+  background-color: #eee;
+}
+
+/* File Node */
+
+.file-node {
+  cursor: pointer;
+  color: #337ab7;
+  transition: color 0.2s ease;
+}
+
+.file-node:hover {
+  color: #23527c;
+}
+
+/* Editor */
+
+.editor {
+  width: 90vw;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editor textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Monaco', monospace;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Syntax Highlighting */
+
+.syntax-highlighting {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.syntax-highlighting code {
+  font-size: 14px;
+  font-family: 'Monaco', monospace;
+}
+
+.syntax-highlighting .keyword {
+  color: #00698f;
+}
+
+.syntax-highlighting .string {
+  color: #8f0a1a;
+}
+
+.syntax-highlighting .number {
+  color: #666;
+}
+
+.syntax-highlighting .comment {
+  color: #999;
+}
+
+/* Buttons */
+
+.button {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #23527c;
+}
+
+/* Alerts */
+
+.alert {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 40px auto;
+}
+
+.modal-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  padding:   20px;}
